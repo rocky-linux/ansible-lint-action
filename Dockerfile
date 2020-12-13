@@ -1,8 +1,8 @@
 FROM python:3.8-slim
 
-LABEL "maintainer"="Ansible by Red Hat <info@ansible.com>"
-LABEL "repository"="https://github.com/ansible/ansible-lint-action"
-LABEL "homepage"="https://github.com/ansible/ansible-lint-action"
+LABEL "maintainer"="The Rocky Linux Project <infrastructure@rockylinux.org>"
+LABEL "repository"="https://github.com/rocky-linux/ansible-lint-action"
+LABEL "homepage"="https://github.com/rocky-linux/ansible-lint-action"
 
 LABEL "com.github.actions.name"="ansible-lint"
 LABEL "com.github.actions.description"="Run Ansible Lint"

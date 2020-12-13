@@ -1,6 +1,6 @@
 name: Ansible Lint
 description: Run Ansible Lint
-author: Ansible by Red Hat <info@ansible.com>
+author: The Rocky Linux Project <infrastructure@rockylinux.org>
 
 inputs:
   args:
