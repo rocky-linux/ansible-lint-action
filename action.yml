@@ -42,7 +42,7 @@ inputs:
     required: false
 runs:
   using: docker
-  image: docker://ghcr.io/rocky-linux/ansible-lint-action:1b7e43618ec45505703147ffe2b1a5f74fd1eeaa
+  image: docker://ghcr.io/rocky-linux/ansible-lint-action:latest
   args:
   - ${{ inputs.args }}
   env:
