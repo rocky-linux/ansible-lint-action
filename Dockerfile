@@ -14,6 +14,11 @@ RUN set -ex && apt-get update && apt-get -q install -y -V git && rm -rf /var/lib
 
 RUN pip install ansible-lint
 
+
+COPY infrastructure/ansible/roles/requirements.yml /requirements.yml
+RUN ansible-galaxy role install -r /requirements.yml
+RUN ansible-galaxy collection install -r /requirements.yml
+
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
