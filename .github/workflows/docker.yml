@@ -1,6 +1,8 @@
 name: Build ansible-actions container
 
 on:
+  pull_request:
+    branches: ['*']
   push:
     branches: ['*']
 
